@@ -2,16 +2,17 @@
 <html lang="en">
      <head>
           <meta charset="utf-8">
-          <title>Kiki's Delivery Service</title>
-          <link rel="stylesheet" href="styles.css">
-          <script defer type="text/javascript" src="script.js"></script>
+          <title>Contact Kiki's Delivery Service</title>
+          <meta name="viewport" content="width=device-width, initial-scale=1">
+          <link rel="stylesheet" media="only screen and (max-width: 525px)" href="mobile.css" />
+          <link rel="stylesheet" media="only screen and (min-width: 526px)" href="desktop.css" />          <script defer type="text/javascript" src="script.js"></script>
      </head>
         <body id="home">
         <div class="container">
                 <header>
                 <div>
                         <h1 id="top">Kiki's Delivery Service</h1>
-                        <nav class="menu">
+                        <nav>
                                 <ul>
                                         <li class="home"><a href="index.html">Home</a></li>
                                         <li class="about"><a href="about.html">About Our Service</a></li>
@@ -22,9 +23,20 @@
                 </header>
                 <main>
                 <div>
-                        <h2>Choose a store in </h2>
-                        <p>
-                        </p>
+                        <h2>Delivery Request Form</h2>
+                        <form>
+                                <label for="fname">First name:</label><br>
+                                <input type="text" id="fname" name="fname"><br>
+                                <label for="lname">Last name:</label><br>
+                                <input type="text" id="lname" name="lname"><br>
+                                <label for="weight">Package Weight:</label><br>
+                                <input type="text" id="weight" name="weight"><br>
+                                <label for="cityLimits">City Limits:</label><br>
+                                <input type="radio" id="insideCity" name="cityLimit" value="Inside">
+                                <label for="insideCity">Inside City Limits</label><br>
+                                <input type="radio" id="outsideCity" name="cityLimit" value="Outside">
+                                <label for="outsideCity">Outside City Limits</label><br>
+                        </form>
                         <a href="#top" class="top">&#9710;</a>
                 </div>
                 </main>
@@ -32,12 +44,12 @@
                 <div>
                         <address>
                                 Kiki's Delivery Service<br>
-                                31011 Memory Lane<br>
-                                Ridgecrest, CA 93555<br>
+                                729 Port Pike<br>
+                                Koriko, Ghibli 1987<br>
                                 (123)456-7890<br>
-                                <a href="mailto:info@letterpressartem.com?Subject=Letterpress%20Book%20Arts%20Inquiries" target="_blank">info@letterpressartem.com</a>
+                                <a href="mailto:delivery@kikis.com?Subject=Letterpress%20Book%20Arts%20Inquiries" target="_blank">info@letterpressartem.com</a>
                         </address>
-                        <p class="align-r">Copyright &copy; 2020 Adriana Viramontes. All rights reserved.</p>
+                        <p class="align-r">Copyright &copy; 2022 Adriana Viramontes. All rights reserved.</p>
                 </div>
                 </footer>
         </div>

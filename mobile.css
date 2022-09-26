@@ -44,24 +44,24 @@ nav ul li a:link,
 nav ul li a:visited {
         display: block;
         padding: 10px 18px;
-        border: 1px solid #993333;
+        border: 1px solid black;
         color: #fff;
-        background-color: #993333;
+        background-color: black;
         text-decoration: none;
 }
 
 nav ul li a:hover {
-        background-color: #99ddff;
+        background-color: gray;
         color: #000;
-        border: 1px solid #99ddff;
+        border: 1px solid gray;
 }
 
 #home nav .home a,
 #about nav .about a,
 #contact nav .contact a {
         background-color: #fff;
-        color: #99ddff;
-        border: 1px solid #99ddff;
+        color: gray;
+        border: 1px solid gray;
         border-bottom: none;
 }
 
@@ -75,8 +75,8 @@ h1 a:visited {
         font-family: "Harrington", "Times New Roman";
         font-size: 40px;
         text-align: center;
-        color: #99ddff;
-        text-shadow: 1px 1px 1px #993333;
+        color: gray;
+        text-shadow: 1px 1px 1px black;
         margin-bottom: 10px;
 }
 
@@ -102,7 +102,7 @@ height: auto;
 }
 
 footer {
-        background: #993333;
+        background: black;
         color: #fff;
         padding-top: 2em;
 }
@@ -118,7 +118,7 @@ height: auto;
 }
 
 blockquote {
-color: #993333;
+color: black;
 text-align: justify;
 font-variant: small-caps;
 font-style: oblique;
@@ -127,7 +127,7 @@ font-style: oblique;
 citation {
 text-transform: capitalize;
 text-align: left;
-color: #993333;
+color: black;
 font-size: 12px;
 }
 
@@ -138,17 +138,17 @@ text-decoration: none;
 font-style: normal;
 padding-bottom: .5em;
 margin-bottom: 1em;
-border-bottom: 3px dotted #993333;
+border-bottom: 3px dotted black;
 line-height: 3em;
 }
 
 span {
-color: #99ddff;
+color: gray;
 }
 
 a:link,
 a:visited {
-color: #993333;
+color: black;
 }
 
 p {
@@ -174,24 +174,24 @@ font-weight: 200;
 
 .top {
         position: fixed;
-        bottom: 100px;
-        right: 100px;
+        bottom: 50px;
+        right: 50px;
         border-radius: 10px;
-        border: solid 2px #5c00e6;
+        border: solid 2px black;
         border-style: dotted;
         padding: 0.15em .4em;
         background-color: rgb(255, 255, 255, 0.7);
-        font-size: 2em;
+        font-size: 15px;
 }
 
 .top:visited {
-        color: #5c00e6;
+        color: black;
 }
 
 .top:hover {
-        color: #ffff00;
-                border-color: #ffff00;
-        background-color: #5C00E6;
+        color: gray;
+                border-color: gray;
+        background-color: black;
 }
 
 .clearfix::after {
@@ -215,7 +215,7 @@ font-size: 16px;
 
 .widget-item {
 font-size: 12px;
-border: 3px dotted #99ddff;
+border: 3px dotted gray;
 margin-bottom: 15px;
 }
 
@@ -249,7 +249,7 @@ padding: 0;
 
 hr {
 width: 60%;
-border-color: #99ddff;
+border-color: gray;
 opacity: 0.5;
 margin-top: 50px;
 margin-bottom: 30px;
@@ -289,16 +289,19 @@ color: #993333;
 } */
 
 /*Home*/
-div.shop {
-display: flex;
-justify-content: space-between;
-align-items: baseline;
-flex-direction: row;
-flex-wrap: wrap;
+div.grid {
+        display: flex;
+        justify-content: flex-start;
+        align-items: baseline;
+        flex-direction: row;
+        flex-wrap: nowrap;
 }
 
-.post-type-archive-products div.shop {
-padding-top: 0;
+div.grid img {
+        border: 5px, black, solid;
+        border-radius: 100%;
+        width: 100px;
+        height: 100px;
 }
 
 /* div.abs-dropdown {
@@ -363,8 +366,8 @@ margin-top: 0;
 /*searchform.php*/
 /* .custom_search_form #searchsubmit {
 padding: 10px 20px;
-background-color: #99ddff;
-border: 1.5px solid #99ddff;
+background-color: gray;
+border: 1.5px solid gray;
 color: #000;
 font-weight: bold;
 }
