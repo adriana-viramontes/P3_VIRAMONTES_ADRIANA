@@ -51,17 +51,17 @@ nav ul li a:visited {
 }
 
 nav ul li a:hover {
-        background-color: gray;
-        color: #000;
-        border: 1px solid gray;
+        background-color: red;
+        color: #fff;
+        border: 1px solid red;
 }
 
 #home nav .home a,
 #about nav .about a,
 #contact nav .contact a {
         background-color: #fff;
-        color: gray;
-        border: 1px solid gray;
+        color: red;
+        border: 1px solid red;
         border-bottom: none;
 }
 
@@ -75,7 +75,7 @@ h1 a:visited {
         font-family: "Harrington", "Times New Roman";
         font-size: 40px;
         text-align: center;
-        color: gray;
+        color: red;
         text-shadow: 1px 1px 1px black;
         margin-bottom: 10px;
 }
@@ -143,7 +143,7 @@ line-height: 3em;
 }
 
 span {
-color: gray;
+color: red;
 }
 
 a:link,
@@ -189,8 +189,8 @@ font-weight: 200;
 }
 
 .top:hover {
-        color: gray;
-                border-color: gray;
+        color: red;
+                border-color: red;
         background-color: black;
 }
 
@@ -215,7 +215,7 @@ font-size: 16px;
 
 .widget-item {
 font-size: 12px;
-border: 3px dotted gray;
+border: 3px dotted red;
 margin-bottom: 15px;
 }
 
@@ -249,7 +249,7 @@ padding: 0;
 
 hr {
 width: 60%;
-border-color: gray;
+border-color: red;
 opacity: 0.5;
 margin-top: 50px;
 margin-bottom: 30px;
@@ -339,6 +339,86 @@ float: none;
 color: #000;
 }
 
+/*Contact*/
+form {
+        padding-bottom: 1em;
+}
+
+form div {
+       margin: 1em;
+       margin-bottom: 0;
+}
+
+fieldset {
+        margin-top: 1.2em;
+        margin-bottom: 1.5em;
+}
+
+legend {
+        font-size: 1.2em;
+}
+
+input[type=text] {
+        width: 100%;
+        padding: 1em;
+        margin: 1em 0;
+        border-radius: 5px;
+        box-sizing: border-box;
+}
+
+input[type=text]:focus {
+        outline: 3px solid #00ffaa;
+}
+
+input[type=checkbox], input[type=radio] {
+        margin: 1em;
+}
+
+select {
+        width: 50%;
+        padding: 1em;
+        border-radius: 5px;
+        border-style: dotted;
+        outline: none;
+}
+
+select:focus {
+        outline: 3px solid #00ffaa;
+}
+
+textarea {
+        width: 100%;
+        height: 150%;
+        padding: 1em;
+        margin: 1em 0;
+        box-sizing: border-box;
+        border-radius: 5px;
+        resize: none;
+}
+
+textarea:focus {
+        outline: 3px solid #00ffaa;
+}
+
+input[type=submit], input[type=reset] {
+        width: initial;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        color: #5C00E6;
+        background-color: #fff;
+}
+
+input[type=submit]:hover, input[type=reset]:hover {
+        width: initial;
+        padding: 1em;
+        margin: 1em;
+        border-radius: 5px;
+        color: #00ffaa;
+        background-color: #000;
+        font-weight: bold;
+}
+
 /*Product*/
 /* .single-products div.thumbnail-column img.wp-post-image {
 width: 50%;
@@ -366,8 +446,8 @@ margin-top: 0;
 /*searchform.php*/
 /* .custom_search_form #searchsubmit {
 padding: 10px 20px;
-background-color: gray;
-border: 1.5px solid gray;
+background-color: red;
+border: 1.5px solid red;
 color: #000;
 font-weight: bold;
 }
