@@ -89,6 +89,14 @@ h1 a:visited {
     100% {left: 0px; bottom: 0px;}
 }
 
+h1:hover {
+    -moz-transform: skewX(10deg);
+    -webkit-transform: skewX(10deg);
+    -o-transform: skewX(10deg);
+    -ms-transform: skewX(10deg);
+    transform: skewX(10deg);
+}
+
 h5 {
 font-family: "Bauhaus 93";
 font-size: 20px;
@@ -201,6 +209,11 @@ font-weight: 200;
     color: red;
             border-color: red;
     background-color: black;
+    -moz-transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -o-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 /* Home */
