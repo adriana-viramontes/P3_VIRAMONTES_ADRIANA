@@ -79,21 +79,14 @@ h1 a:visited {
     text-shadow: 1px 1px 1px black;
     margin: 10px;
     animation-name: header;
-    animation-duration: 0.5s;
-    animation-timing-function: ease-in-out;
+    animation-duration: 1.5s;
+    animation-iteration-count: 1;
+    position: relative;
 }
 
 @keyframes header {
-    0% {background: rgb(255,255,255);
-        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(253,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 100%);}
-    /* 25% {background: rgb(255,0,0);
-        background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 25%, rgba(248,1,1,1) 50%, rgba(255,255,255,1) 75%, rgba(255,0,0,1) 100%);}
-    50% {background: rgb(255,255,255);
-        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(253,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 100%);} */
-    50% {background: rgb(255,0,0);
-        background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 25%, rgba(248,1,1,1) 50%, rgba(255,255,255,1) 75%, rgba(255,0,0,1) 100%);}
-    100% {background: rgb(255,255,255);
-        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(253,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 100%);}
+    0% {left: 800px; bottom: 50px;}
+    100% {left: 0px; bottom: 0px;}
 }
 
 h5 {
@@ -175,7 +168,7 @@ margin-top: 20px;
 
 h2 {
 color: #000;
-/* font-family: ""; */
+font-family: "Ink Free";
 font-size: 30px;
 }
 
@@ -190,14 +183,14 @@ font-weight: 200;
 
 .top {
     position: fixed;
-    bottom: 50px;
-    right: 50px;
+    bottom: 25px;
+    right: 25px;
     border-radius: 10px;
     border: solid 2px black;
     border-style: dotted;
     padding: 0.15em .4em;
     background-color: rgb(255, 255, 255, 0.7);
-    font-size: 15px;
+    font-size: 20px;
 }
 
 .top:visited {
@@ -225,6 +218,7 @@ div.grid img {
     width: 100px;
     height: 100px;
     margin-right: 10px;
+    margin-bottom: 10px;
     transition-property: transform;
     transition-duration: 1.2s;
 }
