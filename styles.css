@@ -77,7 +77,23 @@ h1 a:visited {
     text-align: center;
     color: red;
     text-shadow: 1px 1px 1px black;
-    margin-bottom: 10px;
+    margin: 10px;
+    animation-name: header;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes header {
+    0% {background: rgb(255,255,255);
+        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(253,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 100%);}
+    /* 25% {background: rgb(255,0,0);
+        background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 25%, rgba(248,1,1,1) 50%, rgba(255,255,255,1) 75%, rgba(255,0,0,1) 100%);}
+    50% {background: rgb(255,255,255);
+        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(253,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 100%);} */
+    50% {background: rgb(255,0,0);
+        background: linear-gradient(45deg, rgba(255,0,0,1) 0%, rgba(255,255,255,1) 25%, rgba(248,1,1,1) 50%, rgba(255,255,255,1) 75%, rgba(255,0,0,1) 100%);}
+    100% {background: rgb(255,255,255);
+        background: linear-gradient(45deg, rgba(255,255,255,1) 0%, rgba(253,0,0,1) 25%, rgba(255,255,255,1) 50%, rgba(255,0,0,1) 75%, rgba(255,255,255,1) 100%);}
 }
 
 h5 {
@@ -209,6 +225,17 @@ div.grid img {
     width: 100px;
     height: 100px;
     margin-right: 10px;
+    transition-property: transform;
+    transition-duration: 1.2s;
+}
+
+div.grid img:hover {
+    transform: scale(1.5) rotateY(360deg);
+}
+
+@keyframes storeIcon {
+    0% {transform: scale(2);}
+    100% {transform: scale(2);}
 }
 
 /*Contact*/
