@@ -45,23 +45,23 @@ nav ul li a:visited {
     display: block;
     padding: 10px 18px;
     border: 1px solid black;
-    color: #fff;
-    background-color: black;
+    color: #000;
+    background-color: yellow;
     text-decoration: none;
 }
 
 nav ul li a:hover {
     background-color: #fff;
     color: #000;
-    border: 1px solid #000;
+    border: 1px solid #fff;
 }
 
 #home nav .home a,
 #about nav .about a,
 #contact nav .contact a {
     background-color: #fff;
-    color: red;
-    border: 1px solid red;
+    color: grey;
+    border: 1px solid yellow;
     border-bottom: none;
 }
 
@@ -85,16 +85,22 @@ h1 a:visited {
 }
 
 @keyframes header {
-    0% {left: 800px; bottom: 50px;}
-    100% {left: 0px; bottom: 0px;}
+    0% {left: 800px; bottom: 50px;
+        -moz-transform: skewX(10deg);
+        -webkit-transform: skewX(10deg);
+        -o-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        transform: skewX(10deg);}
+    100% {left: 0px; bottom: 0px;
+        -moz-transform: skewX(10deg);
+        -webkit-transform: skewX(10deg);
+        -o-transform: skewX(10deg);
+        -ms-transform: skewX(10deg);
+        transform: skewX(10deg);}
 }
 
 h1:hover {
-    -moz-transform: skewX(10deg);
-    -webkit-transform: skewX(10deg);
-    -o-transform: skewX(10deg);
-    -ms-transform: skewX(10deg);
-    transform: skewX(10deg);
+    text-shadow: 0 0 10px yellow;
 }
 
 h5 {
@@ -119,13 +125,13 @@ height: auto;
 }
 
 footer {
-    background: black;
-    color: #fff;
+    background: yellow;
+    color: #000;
     padding-top: 2em;
 }
 
 footer p {
-    color: #fff;
+    color: #000;
 }
 
 /*General Layout*/
@@ -194,11 +200,17 @@ font-weight: 200;
     bottom: 25px;
     right: 25px;
     border-radius: 10px;
-    border: solid 2px black;
-    border-style: dotted;
-    padding: 0.15em .4em;
-    background-color: rgb(255, 255, 255, 0.7);
-    font-size: 20px;
+    border: solid 1px #000;
+    padding: 0.3em 0.5em 0.4em 0.5em;
+    background-color: rgba(255, 255, 0, 0.7);
+    font-weight: bold;
+    -moz-transform: rotate(270deg);
+    -webkit-transform: rotate(270deg);
+    -o-transform: rotate(270deg);
+    -ms-transform: rotate(270deg);
+    transform: rotate(270deg);
+    text-decoration: none;
+    text-shadow: 0 0 1px yellow;
 }
 
 .top:visited {
@@ -206,38 +218,50 @@ font-weight: 200;
 }
 
 .top:hover {
-    color: red;
-            border-color: red;
-    background-color: black;
-    -moz-transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -o-transform: scale(1.2);
-    -ms-transform: scale(1.2);
-    transform: scale(1.2);
+    -webkit-box-shadow: 0 0 25px 2px red;
+    box-shadow: 0 0 25px 5px red;
 }
 
 /* Home */
 div.grid {
     display: flex;
-    justify-content: flex-start;
-    align-items: baseline;
     flex-direction: row;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
+    overflow: scroll;
+    margin: -3em -4em -4em -3em;
+    padding: 3em 4em 6em 3em;
+    justify-content: flex-start;
 }
 
-div.grid img {
-    border: 5px black solid;
+div.grid figure {
+    border: 5px red solid;
     border-radius: 100%;
     width: 100px;
     height: 100px;
-    margin-right: 10px;
-    margin-bottom: 10px;
+    margin: 2em 2em 2em 0;
     transition-property: transform;
     transition-duration: 1.2s;
 }
 
-div.grid img:hover {
+div.grid figure:hover {
     transform: scale(1.5) rotateY(360deg);
+}
+
+div.grid img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    background-color: #fff;
+}
+
+div.grid figcaption {
+    color: black;
+    font-weight: bolder;
+    text-align: center;
+    margin: 0.5em;
+    padding: 0.5em;
+    background-color: #fff;
+    border-radius: 100%;
 }
 
 @keyframes storeIcon {
@@ -306,7 +330,8 @@ textarea:focus {
     outline: 3px solid red;
 }
 
-input[type=submit], input[type=reset] {
+input[type=submit],
+input[type=reset] {
     width: initial;
     padding: 1em;
     margin: 1em;
@@ -315,7 +340,8 @@ input[type=submit], input[type=reset] {
     background-color: #fff;
 }
 
-input[type=submit]:hover, input[type=reset]:hover {
+input[type=submit]:hover,
+input[type=reset]:hover {
     width: initial;
     padding: 1em;
     margin: 1em;
@@ -327,8 +353,6 @@ input[type=submit]:hover, input[type=reset]:hover {
     box-shadow: 0 0 25px 2px red;
 }
 
-/*input click good place for flip animation*/
-
 @media (min-width: 562px) {
     /* BODY */
     nav > div,
@@ -339,9 +363,9 @@ input[type=submit]:hover, input[type=reset]:hover {
 
     /* HEADER */
     nav {
-        background-color: red;
+        background-color: black;
         width: 100%;
-        padding: 10px;
+        padding: 11px;
         padding-top: 25px;
     }
 
@@ -350,8 +374,8 @@ input[type=submit]:hover, input[type=reset]:hover {
     }
 
     #home nav .home a,
-#about nav .about a,
-#contact nav .contact a {
+    #about nav .about a,
+    #contact nav .contact a {
     border-bottom: 2px solid #fff;
 }
  
@@ -363,10 +387,13 @@ input[type=submit]:hover, input[type=reset]:hover {
 
     /*General Layout*/
     .top {
-        bottom: 100px;
+        bottom: 75px;
         right: 100px;
         font-size: 20px;
     }
 
-
+    div.grid {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
 }
