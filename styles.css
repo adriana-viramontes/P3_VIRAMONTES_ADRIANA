@@ -223,7 +223,7 @@ font-weight: 200;
 }
 
 /* Home */
-div.grid {
+div.flex {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -233,7 +233,7 @@ div.grid {
     justify-content: flex-start;
 }
 
-div.grid figure {
+div.flex figure {
     border: 5px red solid;
     border-radius: 100%;
     width: 100px;
@@ -243,18 +243,18 @@ div.grid figure {
     transition-duration: 1.2s;
 }
 
-div.grid figure:hover {
+div.flex figure:hover {
     transform: scale(1.5) rotateY(360deg);
 }
 
-div.grid img {
+div.flex img {
     width: 100%;
     height: 100%;
     border-radius: 100%;
     background-color: #fff;
 }
 
-div.grid figcaption {
+div.flex figcaption {
     color: black;
     font-weight: bolder;
     text-align: center;
@@ -389,11 +389,18 @@ input[type=reset]:hover {
     .top {
         bottom: 75px;
         right: 100px;
-        font-size: 20px;
     }
 
-    div.grid {
+    /*Home*/
+    div.flex {
         flex-wrap: wrap;
         overflow: hidden;
+    }
+
+    /*About*/
+    div.grid {
+        display: grid;
+        grid-template-columns: auto auto auto;
+        column-gap: 3em;
     }
 }
