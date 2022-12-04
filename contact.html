@@ -24,18 +24,55 @@
                 <div>
                         <h2>Delivery Request Form</h2>
                         <form>
-                                <label for="fname">First name:</label><br>
-                                <input type="text" id="fname" name="fname"><br>
-                                <label for="lname">Last name:</label><br>
-                                <input type="text" id="lname" name="lname"><br>
-                                <label for="weight">Package Weight:</label><br>
-                                <input type="text" id="weight" name="weight"><br>
-                                <label for="cityLimits">City Limits:</label><br>
-                                <input type="radio" id="insideCity" name="cityLimit" value="Inside">
-                                <label for="insideCity">Inside City Limits</label><br>
-                                <input type="radio" id="outsideCity" name="cityLimit" value="Outside">
-                                <label for="outsideCity">Outside City Limits</label><br>
+                                <h5>Customer Information</h5>
+                                <label for="fname">First name:</label>
                                 <br>
+                                <input type="text" id="fname" name="fname">
+                                <br>
+                                <label for="lname">Last name:</label>
+                                <br>
+                                <input type="text" id="lname" name="lname">
+                                <br>
+                                <label for="email">Email:</label>
+                                <br>
+                                <input type="email" id="email" name="email">
+                                <br>
+                                <label for="phone">Phone number:</label>
+                                <br>
+                                <input type="tel" id="phone" name="phone">
+                                <br>
+                                <label for="dropdate">Date of drop off:</label>
+                                <br>
+                                <input type="date" id="dropdate" name="dropdate">
+                                <br>
+                                <br>
+                                <h5>Package Information</h5>
+                                <label for="recipient">Recipient:</label>
+                                <br>
+                                <input type="text" id="recipient" name="recipient">
+                                <br>
+                                <label for="address">Address:</label>
+                                <br>
+                                <input type="text" id="adress" name="address">
+                                <br>
+                                <label for="city">City:</label>
+                                <br>
+                                <input type="text" id="city" name="city">
+                                <br>
+                                <label for="cityLimits">City Limits:</label>
+                                <br>
+                                <input type="radio" id="insideCity" name="cityLimit" value="Inside">
+                                <label for="insideCity">Inside City Limits</label>
+                                <br>
+                                <input type="radio" id="outsideCity" name="cityLimit" value="Outside">
+                                <label for="outsideCity">Outside City Limits</label>
+                                <br>
+                                <label for="weight">Package Weight(lbs):</label>
+                                <br>
+                                <input type="number" id="weight" name="weight" min="1" max="30" value="1">
+                                <small>Weight cannot exceed 30lbs.</small>
+                                <p>Estimated delivery date given upon request acceptance.</p>
+                                <p>Same-day delivery's only available within city limits.</p>
                                 <input type="submit" name="submit" value="Submit"><input type="reset" name="reset" value="Clear Form">
                         </form>
                         <a href="#top" class="top">&#10147;</a>
@@ -50,7 +87,8 @@
                                 (123)456-7890<br>
                                 <a href="mailto:delivery@kikis.com?Subject=Letterpress%20Book%20Arts%20Inquiries" target="_blank">info@letterpressartem.com</a>
                         </address>
-                        <p class="align-r">Copyright &copy; 2022 Adriana Viramontes. All rights reserved.</p>
+                        <br>
+                        <small>Copyright &copy; 2022 Adriana Viramontes. All rights reserved.</small>
                 </div>
                 </footer>
         </div>
