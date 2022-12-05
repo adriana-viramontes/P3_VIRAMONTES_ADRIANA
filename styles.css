@@ -21,13 +21,16 @@ main {
 nav > div,
 main > div,
 footer > div {
-    padding-bottom: 2em;
     width: 95%;
     margin-left: auto;
     margin-right: auto;
 }
 
 /*HEADER*/
+nav {
+    clear: both;
+}
+
 nav ul {
     margin: 0;
     padding: 0;
@@ -66,19 +69,26 @@ nav ul li a:hover {
     border-bottom: none;
 }
 
-header {
-    color: #000;
+figure.logo {
+    width: 50px;
+    float: left;
+    margin: 10px 0 0 3%;
+}
+
+.logo img {
+    width: 100%;
 }
 
 h1,
 h1 a:link,
 h1 a:visited {
     font-family: "Harrington", "Times New Roman";
-    font-size: 40px;
+    font-size: 2.5em;
     text-align: center;
     color: red;
     text-shadow: 1px 1px 1px black;
-    margin: 10px;
+    margin: 10px 3% 0 0;
+    padding-bottom: 0.2em;
     animation-name: header;
     animation-duration: 1.5s;
     animation-iteration-count: 1;
@@ -105,15 +115,6 @@ h1:hover {
 }
 
 /*FOOTER*/
-.logo {
-position: relative;
-left: 30px;
-top: 30px;
-margin-bottom: -100px;
-width: 200px;
-height: auto;
-}
-
 footer {
     background: yellow;
     color: #000;
@@ -184,6 +185,10 @@ address {
 }
 
 /* Home */
+#home h2 {
+    margin-bottom: 0;
+}
+
 div.flex {
     display: flex;
     flex-direction: row;
@@ -227,6 +232,15 @@ div.flex figcaption {
 @keyframes storeIcon {
     0% {transform: scale(2);}
     100% {transform: scale(2);}
+}
+
+/*About*/
+#about figure {
+    margin: 0;
+}
+
+#about img {
+    width: 100%;
 }
 
 /*Contact*/
@@ -308,7 +322,37 @@ input[type=reset]:hover {
     box-shadow: 0 0 25px 2px red;
 }
 
-@media (min-width: 562px) {
+@media (min-width: 526px) {
+    /*HEADER*/
+    figure.logo {
+        width: 75px;
+    }
+
+    h1,
+    h1 a:link,
+    h1 a:visited {
+        font-size: 3em;
+    }
+
+    nav {
+        background-color: black;
+        width: 100%;
+        padding-bottom: 39px;
+        padding-top: 25px;
+    }
+
+    nav ul li {
+        float: left;
+    }
+
+    #home nav .home a,
+    #about nav .about a,
+    #contact nav .contact a {
+        border-bottom: 2px solid #fff;
+    }
+}
+
+@media (min-width: 935px) {
     /* BODY */
     nav > div,
     main > div,
@@ -320,7 +364,7 @@ input[type=reset]:hover {
     nav {
         background-color: black;
         width: 100%;
-        padding-bottom: 11px;
+        padding-bottom: 39px;
         padding-top: 25px;
     }
 
@@ -331,13 +375,25 @@ input[type=reset]:hover {
     #home nav .home a,
     #about nav .about a,
     #contact nav .contact a {
-    border-bottom: 2px solid #fff;
-}
+        border-bottom: 2px solid #fff;
+    }
+
+    figure.logo {
+        margin: 1px;
+        width: 100px;
+        float: left;
+        margin-left: 10%;
+    }
+
+    .logo img {
+        width: 100%;
+    }
  
     h1,
     h1 a:link,
     h1 a:visited {
-            font-size: 50px;
+            font-size: 4em;
+            margin-right: 20%;
     }
 
     /*General Layout*/
