@@ -140,17 +140,29 @@ p {
 h2 {
     color: #000;
     font-family: "Ink Free";
-    font-size: 30px;
+    font-size: 2.4em;
 }
 
+h3 {
+    font-family: Handlee;
+    font-size: 1.8em;
+}
+
+h3 {
+    font-family: Handlee;
+    font-size: 1.6em;
+}
 
 h5 {
     font-family: Handlee;
-    color: #000;
     font-weight: 200;
     font-size: 1.4em;
     text-align: center;
     margin-top: 0;
+}
+
+blockquote {
+    font-style: oblique;
 }
 
 address {
@@ -189,6 +201,10 @@ address {
     margin-bottom: 0;
 }
 
+#home section.intro ul li {
+    font-size: 1.5em;
+}
+
 div.flex {
     display: flex;
     flex-direction: row;
@@ -196,8 +212,13 @@ div.flex {
     overflow: scroll;
     margin: -3em -4em -4em -3em;
     padding: 3em 4em 6em 3em;
+    scrollbar-width: none;
+    -ms-overflow-style: none;
 }
 
+div.flex::-webkit-scrollbar {
+    display: none;
+}
 div.flex figure {
     border: 5px red solid;
     border-radius: 100%;
@@ -350,6 +371,25 @@ input[type=reset]:hover {
     #contact nav .contact a {
         border-bottom: 2px solid #fff;
     }
+
+    /*Home*/
+    div.flex {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+
+    #home section.quote {
+        width: 25%;
+        float: right;
+        padding: 1em;
+        margin: 1em;
+        border: 5px double yellow;
+    }
+    
+    #home section.intro {
+        float: left;
+        width: 60%;
+    }
 }
 
 @media (min-width: 935px) {
@@ -406,6 +446,19 @@ input[type=reset]:hover {
     div.flex {
         flex-wrap: wrap;
         overflow: hidden;
+    }
+
+    #home section.quote {
+        width: 30%;
+        float: right;
+        padding: 1em;
+        margin: 1em;
+        border: 5px double yellow;
+    }
+    
+    #home section.intro {
+        float: left;
+        width: 60%;
     }
 
     /*About*/
